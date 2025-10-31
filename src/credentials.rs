@@ -13,6 +13,10 @@ use crate::{ApiKey, ApiKeyId};
 
 pub const JWT_EXPIRY: Duration = Duration::from_secs(60);
 
+#[derive(Debug, Clone, thiserror::Error)]
+#[error("Failed to encode JSON web token: {0:?}")]
+pub struct EncodingError(#[from] jsonwebtoken::errors::Error);
+
 /// Claims for a minimal JSON Web Token
 #[derive(Serialize)]
 struct ExpiryClaims {
@@ -47,7 +51,7 @@ impl Credentials {
     /// Create a new JSON Web Token based on the credentials
     ///
     /// The created token has a random nonce and default expiry of [`JWT_EXPIRY`]
-    pub fn generate_jwt(&self) -> Result<String, jsonwebtoken::errors::Error> {
+    pub fn generate_jwt(&self) -> Result<String, EncodingError> {
         let iat = get_current_timestamp();
         let exp = iat + JWT_EXPIRY.as_secs();
 
@@ -62,11 +66,11 @@ impl Credentials {
         header.kid = Some(self.id.0.clone());
         header.nonce = Some(nonce);
 
-        encode(
+        Ok(encode(
             &header,
             &ExpiryClaims { exp, iat },
             &EncodingKey::from_secret(self.secret.0.as_bytes()),
-        )
+        )?)
     }
 }
 

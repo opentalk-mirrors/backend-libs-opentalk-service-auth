@@ -13,7 +13,7 @@ pub mod service;
 
 mod credentials;
 
-pub use credentials::{Credentials, JWT_EXPIRY};
+pub use credentials::{Credentials, EncodingError, JWT_EXPIRY};
 
 /// The identifier of an API key
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash)]
