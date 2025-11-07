@@ -147,18 +147,6 @@ trigger_changelog_preview:
     PIPELINE_MERGE_REQUEST_IID: $CI_MERGE_REQUEST_IID
   trigger: opentalk/tools/check-changelog
 
-lint:mod-rs-files:
-  # This job is needed until we can fully deny the `self_named_module_files` in clippy.
-  # The blocker for this is a bug in clippy that triggers false positives in some cases.
-  # https://github.com/rust-lang/rust-clippy/issues/11916
-  stage: lint
-  <<: *default_job_condition
-  variables:
-    # For getting color output from `tput`
-    TERM: xterm-256color
-  before_script: apt-get update && apt-get install -y fd-find
-  script: ./ci/lint-mod-rs-files.sh
-
 test:cargo_test:
   stage: test
   needs: []
