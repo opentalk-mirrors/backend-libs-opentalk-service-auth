@@ -29,7 +29,7 @@ axum = { version = "0.8", optional = true }
 actix-web = { version = "4.11", optional = true }
 jsonwebtoken = { version = "10.1", features = ["aws_lc_rs"] }
 serde = { version = "1", features = ["derive"] }
-opentalk-types-api-common = { version = "0.1", optional = true, features = [
+opentalk-types-api-common = { version = "0.2", optional = true, features = [
   "http",
 ] }
 thiserror = "2"
@@ -41,3 +41,6 @@ rand = "0.9"
 [dev-dependencies]
 toml = "0.9"
 config = "0.15"
+
+[lints.clippy]
+self_named_module_files = "deny"

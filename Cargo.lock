@@ -1522,9 +1522,9 @@ dependencies = [
 
 [[package]]
 name = "opentalk-types-api-common"
-version = "0.1.1"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "825f7a9bf022738ebd46b3f903c96de90720a845f4a992fff41555564d5c063a"
+checksum = "1c875a4abde2096144094202ad5a9f3c505d67adc07cd607a261e459a93435cd"
 dependencies = [
  "actix-web",
  "axum",
@@ -1543,9 +1543,9 @@ dependencies = [
 
 [[package]]
 name = "opentalk-types-common"
-version = "0.37.1"
+version = "0.38.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b3dfa46cbc29e6e4ca2ec258e8cdc4d5520bf6077374ead31fdb4a6504e9c16f"
+checksum = "0bd2c36655a65b3fdab006faa0565b190340d988de3d30fff3deccf0f81d6f5c"
 dependencies = [
  "actix-http",
  "actix-web-httpauth",
