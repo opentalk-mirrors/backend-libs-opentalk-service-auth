@@ -13,7 +13,7 @@ use opentalk_types_api_common::error::ApiError;
 use serde::Deserialize;
 
 use crate::{
-    credentials::Credentials,
+    api_key::ApiKey,
     service::decoding_keys::{DecodingError, DecodingKeys},
 };
 
@@ -33,8 +33,8 @@ pub enum BuildMiddlewareError {
 
 /// A map of API keys and their identifiers
 ///
-/// This type is usually built by deserializing a list of [`Credentials`]. Note that the
-/// credentials can be deserialized as object or as string. E.g.:
+/// This type is usually built by deserializing a list of [`ApiKey`]s. Note that the
+/// api keys can be deserialized as object or as string. E.g.:
 ///
 /// ```toml
 /// api_keys = [
@@ -73,23 +73,23 @@ pub enum BuildMiddlewareError {
 /// OT_TEST_HTTP__API_KEYS="roomserver:secret1,recorder:secret2,controller:very_secret"
 /// ```
 #[derive(Debug, Clone, Default, Deserialize)]
-pub struct ApiKeys(Vec<Credentials>);
+pub struct ApiKeys(Vec<ApiKey>);
 
 impl ApiKeys {
-    pub fn new(keys: Vec<Credentials>) -> Self {
+    pub fn new(keys: Vec<ApiKey>) -> Self {
         Self(keys)
     }
 
-    pub fn inner(&self) -> &[Credentials] {
+    pub fn inner(&self) -> &[ApiKey] {
         &self.0
     }
 
-    pub fn into_inner(self) -> Vec<Credentials> {
+    pub fn into_inner(self) -> Vec<ApiKey> {
         self.0
     }
 
     /// Add an API key
-    pub fn add_key(&mut self, key: Credentials) {
+    pub fn add_key(&mut self, key: ApiKey) {
         self.0.push(key);
     }
 
@@ -172,18 +172,18 @@ mod tests {
 
     use serde::Deserialize;
 
-    use crate::{credentials::Credentials, service::ApiKeys};
+    use crate::{api_key::ApiKey, service::ApiKeys};
 
     #[test]
     fn add_key() {
         let mut api_keys = ApiKeys::default();
 
-        let credentials = Credentials::new("key_id", "secret");
+        let api_key = ApiKey::new("key_id", "secret");
 
-        api_keys.add_key(credentials.clone());
+        api_keys.add_key(api_key.clone());
 
         assert_eq!(api_keys.0.len(), 1);
-        assert_eq!(api_keys.0[0], credentials);
+        assert_eq!(api_keys.0[0], api_key);
     }
 
     #[derive(Deserialize)]
@@ -217,9 +217,9 @@ mod tests {
         };
 
         assert_eq!(api_keys.0.len(), 3);
-        assert_eq!(api_keys.0[0], Credentials::new("roomserver", "1234"));
-        assert_eq!(api_keys.0[1], Credentials::new("recorder", "4321"));
-        assert_eq!(api_keys.0[2], Credentials::new("controller", "5678"));
+        assert_eq!(api_keys.0[0], ApiKey::new("roomserver", "1234"));
+        assert_eq!(api_keys.0[1], ApiKey::new("recorder", "4321"));
+        assert_eq!(api_keys.0[2], ApiKey::new("controller", "5678"));
     }
 
     #[test]
@@ -248,8 +248,8 @@ mod tests {
         } = TestConfig::deserialize(config).unwrap();
 
         assert_eq!(api_keys.0.len(), 2);
-        assert_eq!(api_keys.0[0], Credentials::new("roomserver", "1234"));
-        assert_eq!(api_keys.0[1], Credentials::new("recorder", "4321"));
+        assert_eq!(api_keys.0[0], ApiKey::new("roomserver", "1234"));
+        assert_eq!(api_keys.0[1], ApiKey::new("recorder", "4321"));
         assert_eq!(url, "http://localhost");
     }
 }
