@@ -5,7 +5,7 @@
 [package]
 name = "opentalk-service-auth"
 description = "Authorize internal services using API-Tokens"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["OpenTalk Team <mail@opentalk.eu>"]
 publish = true
 edition = "2024"

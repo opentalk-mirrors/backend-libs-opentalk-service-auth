@@ -3,7 +3,27 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.1.1] - 2025-11-24
+
+[0.1.1]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.1.0...v0.1.1
+
+### 🚀 New features
+
+- Add justfile for release scripts ([!8](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/8))
+
+### 🐛 Bug fixes
+
+- Update repository url ([!8](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/8))
+
+### 📚 Documentation
+
+- Enable all features for generated docs ([!8](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/8))
+
+### ⚙ Miscellaneous
+
+- Update dependencies ([!7](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/7))
 
 ## [0.1.0] - 2025-11-17
 
