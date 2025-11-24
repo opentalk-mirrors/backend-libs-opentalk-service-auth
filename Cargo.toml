@@ -10,7 +10,7 @@ authors = ["OpenTalk Team <mail@opentalk.eu>"]
 publish = true
 edition = "2024"
 homepage = "https://opentalk.eu/"
-repository = "https://gitlab.opencode.de/opentalk/orchestrator"
+repository = "https://gitlab.opencode.de/opentalk/libs/opentalk-service-auth"
 license = "EUPL-1.2"
 
 [package.metadata.docs.rs]
