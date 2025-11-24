@@ -13,6 +13,8 @@ homepage = "https://opentalk.eu/"
 repository = "https://gitlab.opencode.de/opentalk/orchestrator"
 license = "EUPL-1.2"
 
+[package.metadata.docs.rs]
+all-features = true
 
 [features]
 default = []
