@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-02-05
+
+[0.2.0]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.1.3...v0.2.0
+
+### 🚀 New features
+
+- Implement PartialEq & Eq for ApiKeys ([!13](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/13))
+
+### ⚙ Miscellaneous
+
+- Update dependencies ([!14](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/14))
+
 ## [0.1.3] - 2026-01-20
 
 [0.1.3]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.1.2...v0.1.3
