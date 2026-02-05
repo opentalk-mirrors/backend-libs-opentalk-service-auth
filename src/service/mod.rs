@@ -72,7 +72,7 @@ pub enum BuildMiddlewareError {
 /// ```sh
 /// OT_TEST_HTTP__API_KEYS="roomserver:secret1,recorder:secret2,controller:very_secret"
 /// ```
-#[derive(Debug, Clone, Default, Deserialize)]
+#[derive(Debug, Clone, Default, Deserialize, PartialEq, Eq)]
 pub struct ApiKeys(Vec<ApiKey>);
 
 impl ApiKeys {
