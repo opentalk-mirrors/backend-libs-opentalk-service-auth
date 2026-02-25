@@ -6,7 +6,7 @@
 use std::{str::FromStr, time::Duration};
 
 use jsonwebtoken::{Algorithm, EncodingKey, Header, encode, get_current_timestamp};
-use rand::{Rng, distr::Alphanumeric, rng};
+use rand::{RngExt, distr::Alphanumeric, rng};
 use serde::{Deserialize, Serialize};
 
 use crate::{ApiKeyId, ApiKeySecret};
