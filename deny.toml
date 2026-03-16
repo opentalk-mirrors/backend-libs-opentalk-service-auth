@@ -41,7 +41,6 @@ ignore = []
 # More documentation for the licenses section can be found here:
 # https://embarkstudios.github.io/cargo-deny/checks/licenses/cfg.html
 [licenses]
-version = 2
 allow = [
   "Apache-2.0",
   "BSD-2-Clause",
@@ -53,6 +52,7 @@ allow = [
   "Unicode-3.0",
   "Zlib",
 ]
+version = 2
 # The confidence threshold for detecting a license from license text.
 # The higher the value, the more closely the license text must be to the
 # canonical license text of a valid SPDX license file.
@@ -63,19 +63,19 @@ confidence-threshold = 0.8
 exceptions = [
   { allow = [
     "EUPL-1.2",
-  ], name = "opentalk-types-api-common" },
+  ], name = "opentalk-service-auth" },
   { allow = [
     "EUPL-1.2",
-  ], name = "opentalk-service-auth" },
+  ], name = "opentalk-types-api-common" },
   { allow = [
     "EUPL-1.2",
   ], name = "opentalk-types-common" },
   { allow = [
     "EUPL-1.2",
-  ], name = "opentalk-types-common-macros" },
+  ], name = "opentalk-types-common-identifiers" },
   { allow = [
     "EUPL-1.2",
-  ], name = "opentalk-types-common-identifiers" },
+  ], name = "opentalk-types-common-macros" },
 
 ]
 
