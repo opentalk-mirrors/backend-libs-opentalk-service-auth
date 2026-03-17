@@ -33,7 +33,7 @@ _check_yq:
         exit 1
     fi
 
-prepare-release VERSION: (set-version VERSION)
+prepare-release VERSION: (set-version VERSION) (update-changelog VERSION)
 
 # Sets the version in the Cargo.toml and updates the Cargo.lock
 set-version VERSION: _check_cargo_set_version _check_yq
