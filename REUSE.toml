@@ -11,10 +11,10 @@ version = 1
 SPDX-FileCopyrightText = ["OpenTalk Team <mail@opentalk.eu>"]
 SPDX-License-Identifier = "EUPL-1.2"
 path = [
-  "README.md",
+  ".commitlintrc.json",
   "CHANGELOG.md",
   "Cargo.lock",
+  "README.md",
   "renovate.json",
-  ".commitlintrc.json",
 ]
 precedence = "aggregate"
