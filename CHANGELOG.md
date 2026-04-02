@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.2] - 2026-04-02
+
+[0.2.2]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.2.1...v0.2.2
+
+### 🐛 Bug fixes
+
+- Include changelog update in prepare-release script ([!29](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/29))
+
+### 📦 Dependencies
+
+- (deps) Lock file maintenance ([!32](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/32))
+- (deps) Update opentalk ([!30](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/30))
+
+### Ci
+
+- Use changelog template ([!33](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/33))
+
 ## [0.2.0] - 2026-02-05
 
 [0.2.0]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.1.3...v0.2.0
