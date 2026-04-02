@@ -31,7 +31,7 @@ actix-web = { version = "4.12", optional = true }
 axum = { version = "0.8", optional = true }
 futures = { version = "0.3", optional = true }
 jsonwebtoken = { version = "10.3" }
-opentalk-types-api-common = { version = "0.6", optional = true, features = [
+opentalk-types-api-common = { version = "0.7", optional = true, features = [
   "http",
 ] }
 rand = "0.10"
