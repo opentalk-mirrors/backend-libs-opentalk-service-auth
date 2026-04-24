@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.3] - 2026-04-24
+
+[0.2.3]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.2.2...v0.2.3
+
+### 📦 Dependencies
+
+- (deps) Update git.opentalk.dev:5050/opentalk/backend/containers/rust docker tag to v1.94.1 ([!38](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/38))
+- (deps) Lock file maintenance ([!37](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/37))
+- (deps) Update rust crate rand to v0.10.1 ([!39](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/39))
+- (deps) Lock file maintenance ([!40](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/40))
+- (deps) Update opentalk ([!42](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/42))
+
 ## [0.2.2] - 2026-04-02
 
 [0.2.2]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.2.1...v0.2.2
