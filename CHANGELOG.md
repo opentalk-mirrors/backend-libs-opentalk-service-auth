@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.4] - 2026-07-16
+
+[0.2.4]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.2.3...v0.2.4
+
+### 📦 Dependencies
+
+- (deps) Update rust crate config to v0.15.23 ([!46](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/46))
+- (deps) Update git.opentalk.dev:5050/opentalk/backend/containers/rust docker tag to v1.96.0 ([!47](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/47))
+- (deps) Lock file maintenance ([!43](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/43))
+- (deps) Lock file maintenance ([!48](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/48))
+- (deps) Update alpine docker tag to v3.24 ([!49](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/49))
+- (deps) Lock file maintenance ([!50](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/50))
+- (deps) Lock file maintenance ([!53](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/53))
+- (deps) Lock file maintenance ([!55](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/55))
+- (deps) Lock file maintenance ([!57](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/57))
+- (deps) Update git.opentalk.dev:5050/opentalk/backend/containers/rust docker tag to v1.97.0 ([!58](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/58))
+- (deps) Lock file maintenance ([!59](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/59))
+- (deps) Update rust crate opentalk-types-api-common to 0.8 ([!61](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/61))
+- (deps) Update rust crate spin ([!61](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/61))
+
 ## [0.2.3] - 2026-04-24
 
 [0.2.3]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.2.2...v0.2.3
