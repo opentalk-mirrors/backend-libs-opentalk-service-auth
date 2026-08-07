@@ -11,7 +11,7 @@ license = "EUPL-1.2"
 name = "opentalk-service-auth"
 publish = true
 repository = "https://gitlab.opencode.de/opentalk/libs/opentalk-service-auth"
-version = "0.3.0"
+version = "0.4.0"
 
 [package.metadata.docs.rs]
 all-features = true
