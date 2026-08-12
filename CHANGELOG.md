@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-08-12
+
+[0.5.0]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.4.0...v0.5.0
+
+### 📦 Dependencies
+
+- (deps) Lock file maintenance ([!77](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/77))
+- (deps) Update rust crate opentalk-types-api-common to 0.12.0 ([!79](https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/merge_requests/79))
+
 ## [0.4.0] - 2026-08-07
 
 [0.4.0]: https://git.opentalk.dev/opentalk/backend/libs/opentalk-service-auth/-/compare/v0.3.0...v0.4.0
