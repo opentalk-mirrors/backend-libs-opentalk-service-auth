@@ -26,7 +26,16 @@ db-urls = ["https://github.com/rustsec/advisory-db"]
 yanked = "deny"
 # A list of advisory IDs to ignore. Note that ignored advisories will still
 # output a note when they are encountered.
-ignore = []
+ignore = [
+  # The h2 crate, used internally by hyper, had a flaw that would accept and queue empty DATA frames without limit.
+  # If streams were not actively drained, this could lead to unbounded memory usage, or a panic if the length overflows.
+  # Low severity.
+  #
+  # Announcement: https://github.com/hyperium/hyper/security/advisories/GHSA-q83h-524g-xf6h
+  #
+  # This version of h2 is a transient dependency pulled in by actix-web.
+  "RUSTSEC-2026-0258",
+]
 # Threshold for security vulnerabilities, any vulnerability with a CVSS score
 # lower than the range specified will be ignored. Note that ignored advisories
 # will still output a note when they are encountered.
